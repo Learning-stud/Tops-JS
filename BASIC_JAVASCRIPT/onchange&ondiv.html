@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+
+ <style>
+  div{
+   height: 200px;
+   width: 20%;
+   border: 2px solid black;
+  }
+ </style>
+</head>
+<body>
+
+
+ <div></div>
+
+ 
+<input type="text" name="" id="">
+ <script>
+  let box = document.querySelector("div"),
+  input = document.querySelector("input");
+  input.addEventListener("input", () => {
+   box.style.borderRadius = input.value;
+   box.style.backgroundColor = input.value
+   
+  });
+
+ </script>
+<!-- ---------------------------------------------------- -->
+ onchange
+ <select name="" id="" onchange="a(this.value)" >
+ <option value="green">green</option>
+ <option value="orangered">orangered</option>
+ <option value="pink">pink</option>
+ 
+</select>
+ <script>
+  box = document.querySelector("div")
+  function a(color) {
+   box.style.background = color;
+   
+  }
+ </script>
+</body>
+</html>
